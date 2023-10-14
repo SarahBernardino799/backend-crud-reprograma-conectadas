@@ -1,13 +1,13 @@
 const model = require('../infra/database/models/Book');
 
 //TODO: Criar service da aplicação
-const getAll = async () =>{
+const getAnimes = async () =>{
   return await model.find();
 };
-const getById = async (id) =>{
+const getAnimesById = async (id) =>{
   return await model.findById(id);
 };
 module.exports = {
-  getAll,
-  getById,
+  getAnimes,
+ getAnimesById,
 };
