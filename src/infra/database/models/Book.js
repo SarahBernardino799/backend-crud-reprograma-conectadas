@@ -10,7 +10,7 @@ const Model = new mongoose.Schema({
   uid: { type: String, unique: true },
   title: { type: String, required: [true, "Title is required"] },
   gender: { type: String, required: [true, "Gender is required"] },
-  author: { type: String, required: [true, "Author is required"] },
+  diretor: { type: String, required: [true, "Diretor is required"] },
   isbn: {
     type: String,
     validate: {
