@@ -6,7 +6,7 @@ const bookController = require('../controllers/BookController');
 router.get("/", controller.getAnimes);
 router.get("/:id", controller.getAnimesById);
 router.post("/add", controller.addAnime);
-router.patch("/edite", controller.editeAnime);
-router.delete("/delete", controller.deleteAnime);
+router.patch("/edite/:id", controller.editeAnime);
+router.delete("/delete/:id", controller.deleteAnime);
 
 module.exports = router;
