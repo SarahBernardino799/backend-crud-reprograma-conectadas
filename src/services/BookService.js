@@ -1,4 +1,4 @@
-const model = require('../infra/database/models/Book');
+const model = require('../infra/database/models/animes');
 
 //TODO: Criar service da aplicação
 const getAnimes = async () =>{
