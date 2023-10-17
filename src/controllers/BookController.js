@@ -2,6 +2,11 @@ const service = require('../services/BookService');
 const mongoose = require('mongoose');
 
 //TODO: Criar controllers da aplicação
+
+const getAnimes = (req,res){
+  const animes = 
+}
+
 const getAnimeById = async (req, res) => {
   const id = req.params.id;
   if(!mongose.Types.ObjectId.isValid(id)){
