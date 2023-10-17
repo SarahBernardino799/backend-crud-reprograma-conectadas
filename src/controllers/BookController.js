@@ -3,8 +3,14 @@ const mongoose = require('mongoose');
 
 //TODO: Criar controllers da aplicação
 
-const getAnimes = (req,res){
-  const animes = 
+const getAnimes = async (req, res) => {
+ try{
+   const allAnimes = await serve.find();
+   req.status(200).json(allAnimes)
+     } catch (error) {
+   console.log(error)
+   res.status(500).json({ message: error.message})
+     }
 }
 
 const getAnimeById = async (req, res) => {
@@ -20,3 +26,7 @@ const getAnimeById = async (req, res) => {
   }
   res.send(anime);
 };
+module.exports = {
+  getAnimes,
+  getAnimeById
+}
