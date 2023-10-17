@@ -10,7 +10,7 @@ const Model = new mongoose.Schema({
   uid: { type: String, unique: true },
   title: { type: String, required: [true, "Title is required"] },
   gender: { type: String, required: [true, "Gender is required"] },
-  diretor: { type: String, required: [true, "Diretor is required"] },
+  estudio: { type: String, required: [true, "estudio is required"] },
   isbn: {
     type: String,
     validate: {
@@ -24,6 +24,6 @@ const Model = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now() },
 });
 
-const Book = mongoose.model("books", Model);
+const Anime = mongoose.model("animes", Model);
 
-module.exports = Book;
+module.exports = Anime;
