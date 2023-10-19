@@ -26,7 +26,19 @@ const getAnimeById = async (req, res) => {
   }
   res.send(anime);
 };
+const  deleteAnime = async (req, res) =>{
+const {id} = req.params
+ /*adicione o model adicionado na sua schema no caso aqui é 'serve'*/
+const deleted = await serve.findByIdAndDelete(id)
+const message = `O anime do ${deleted.titulo} foi deletada com sucesso.`
+res.status(200).json({message})
+} catch (error) {
+console.error(error)
+res.status(500).json({message:"não foi possivel deletar o Anime"})
+
+}
 module.exports = {
   getAnimes,
-  getAnimeById
+  getAnimeById,
+ deleteAnime
 }
