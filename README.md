@@ -208,18 +208,6 @@ versão
 ```
 
 
-
-**Documentação**
-______________________________________________________
-```
-Swagger:
-npm i swagger-autogen swagger-ui-express
-versão
-├── swagger-autogen@2.23.5
-└── swagger-ui-express@5.0.0
-```
-<br>
-
 ## 🔒 **Variáveis de Ambiente**
 
 <br>
@@ -242,6 +230,7 @@ versão
 | Verbo  |   EndPoint      |        Descrição da Rota                   | Status |
 
 | ------ | --------------- | -------------------------------------------| ------ |------|
+
 | POST   | /add            | Adicionar um novo anime                    |   201  |
 
 | GET    | /all            | Listar todos os animes                     |   200  |
