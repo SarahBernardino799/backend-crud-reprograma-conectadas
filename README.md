@@ -240,11 +240,16 @@ versão
 - Dança
 
 | Verbo  |   EndPoint      |        Descrição da Rota                   | Status |
+
 | ------ | --------------- | -------------------------------------------| ------ |------|
 | POST   | /add            | Adicionar um novo anime                    |   201  |
+
 | GET    | /all            | Listar todos os animes                     |   200  |
+
 | GET    | /:id            | Mostrar os animes pelo ID                  |   200  |
+
 | DELETE | /:id            | Remove um anime                            |   200  |
+
 | PATCH  | /:id            | Altera um anime                            |   200  |
 <br>
 
@@ -253,8 +258,6 @@ versão
 
 ### 📚 **Documentação da API**
 ________________________________________________________________________________
-
-📝[Swagger]()
 
 📝[Render]()
 
